@@ -1,50 +1,67 @@
-## Excel Data Analysis
+# E-Commerce Data Analytics Project
 
-This section provides a step-by-step guide on how to utilize Excel for analyzing the e-commerce dataset. The analysis includes creating pivot charts based on SQL queries to derive meaningful insights.
+## Project Overview
+This project involves analyzing e-commerce data using SQL, Excel, and Power BI to derive insights and visualize key metrics. The main objectives are to identify trends, track sales performance, and provide a comprehensive overview of business operations.
 
-### Steps to Analyze Data in Excel
+## Tools and Technologies
+- **SQL**: For querying the database to extract and manipulate data.
+- **Excel**: For creating pivot charts and analyzing data from SQL queries.
+- **Power BI**: For building interactive dashboards to visualize the data.
 
-1. **Import Data into Excel**:
-   - Export the required data from MySQL by running the necessary SQL queries.
-   - Save the exported data as a CSV file.
-   - Open Excel and import the CSV file.
+## Data Sources
+- **E-commerce Database**: Contains tables such as Orders, Customers, Products, and Sales.
 
-2. **Create Pivot Tables and Pivot Charts**:
-   - **Credit Limit Analysis**:
-     - Insert a Pivot Table to summarize customer credit limits.
-     - Create a Pivot Chart to visualize credit limits across different customer segments.
-   - **Late Shipping Analysis**:
-     - Create a Pivot Table to list customers with late shipments.
-     - Generate a Pivot Chart to show the impact of late shipping on different customers.
-   - **Over Credit Limit Analysis**:
-     - Use a Pivot Table to highlight customers who exceeded their credit limits.
-     - Visualize this data with a Pivot Chart.
-   - **Office Sales by Customer Country**:
-     - Create a Pivot Table to analyze sales data by office and customer country.
-     - Develop a Pivot Chart to display sales distribution across countries.
-   - **Products Purchased Together**:
-     - Insert a Pivot Table to identify frequently bought together products.
-     - Visualize this with a suitable Pivot Chart.
-   - **Sales and Country Overview**:
-     - Generate a Pivot Table to provide an overview of sales by country.
-     - Use a Pivot Chart to present this data visually.
-   - **Sales Value Change from Previous Order**:
-     - Create a Pivot Table to calculate the change in sales value from previous orders.
-     - Visualize these changes with a Pivot Chart.
+## SQL Queries
+1. **Credit Limit**: Identifying customers' credit limits.
+2. **Customers Affected by Late Shipping**: Listing customers who have experienced late shipments.
+3. **Customers Over Credit Limit**: Finding customers who have exceeded their credit limit.
+4. **Office Sales by Customer Country**: Summarizing sales by office and customer country.
+5. **Products Purchased Together**: Analyzing products that are often bought together.
+6. **Sales and Country Overview**: Providing an overview of sales by country.
+7. **Sales Value Change from Previous Order**: Calculating the change in sales value from one order to the next.
 
-3. **Format Charts and Tables**:
-   - Apply consistent formatting to all charts and tables for better readability.
-   - Use conditional formatting to highlight key metrics and outliers.
+## Excel Analysis
+- **Pivot Charts**: Created for each of the SQL queries to visualize the data. The charts include:
+  - Credit Limit Analysis
+  - Late Shipping Impact
+  - Customers Over Credit Limit
+  - Office Sales by Customer Country
+  - Products Purchased Together
+  - Sales and Country Overview
+  - Sales Value Change from Previous Order
 
-# Snapshot of Excel Workbook 
+## Power BI Dashboards
+### Dashboard 1
+This dashboard provides a comprehensive analysis of sales and net profit.
 
-![Snap 1](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/5458c5a0-717b-42e0-8167-8b3deea9795e)
+- **Clustered Bar Chart**: Analyzes sales and net profit by product line.
+- **Scatter Chart**: Analyzes net profit and sales by the cost of sale.
+- **Donut Chart**: Analyzes sales and net profit by office country.
+- **Stacked Column Chart**: Analyzes sales and net profit by customer country.
+- **Cards**: Display total sales, count of unique orders, and average value per order.
+- **Trend Lines**: Show trends by office country below each card.
+- **Slicers**: 
+  - Order Date Slicer: Filters charts and cards by order date.
+  - Product Line Slicer: Filters charts and cards by product line.
+- **Toggle Buttons**: Switch between sales and net profit views in the charts.
 
-![Snap 2](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/5a97720d-b001-4263-9389-4325635f9612)
+### Dashboard 2
+This dashboard focuses on a more detailed analysis of net profit.
 
-![Snap 3](https://github.com/pradeeshculer/E-Commerce-Analysis/assets/115096109/b2a0bcaf-b85a-44f7-a6a2-75fbf95e8c0e)
+- **Decomposition Tree**: Analyzes net profit explained by customer country, product line, and customer name.
+- **Table**: Shows a sales overview with columns such as Order Year, Order Month, Sales Value, Sales Value MoM%, and Sales Value YTD.
+- **Toggle Buttons**: Switch between the two dashboards.
 
-### Conclusion
+## How to Run the Project
+1. **Database Setup**: Ensure you have access to the e-commerce database and the necessary permissions to run SQL queries.
+2. **Run SQL Queries**: Execute the provided SQL queries to extract the data needed for analysis.
+3. **Excel Analysis**: Import the SQL query results into Excel and create the pivot charts.
+4. **Power BI Dashboards**:
+   - Import the data into Power BI.
+   - Follow the provided steps to create the visualizations and set up the slicers and toggle buttons.
+5. **Interact with the Dashboards**: Use the slicers and toggle buttons to explore the data and gain insights.
 
-Using Excel for data analysis allows for detailed and interactive exploration of the e-commerce dataset. By following the steps outlined above, you can create comprehensive pivot charts and tables that provide valuable insights into various aspects of the business, from credit limits to sales performance across different countries.
+
+## Conclusion
+This project showcases the use of SQL, Excel, and Power BI to analyze and visualize e-commerce data effectively. The insights derived can help in making informed business decisions.
 
